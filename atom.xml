@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-18T13:21:03.218Z</updated>
+  <updated>2022-03-18T14:20:58.774Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,16 @@
     <link href="http://example.com/2022/03/18/webpack3-advancedConcept2-md/"/>
     <id>http://example.com/2022/03/18/webpack3-advancedConcept2-md/</id>
     <published>2022-03-18T13:21:03.000Z</published>
-    <updated>2022-03-18T13:21:03.218Z</updated>
+    <updated>2022-03-18T14:20:58.774Z</updated>
     
+    <content type="html"><![CDATA[<h1 id="高级概念篇2"><a href="#高级概念篇2" class="headerlink" title="高级概念篇2"></a>高级概念篇2</h1><h2 id="1-webpack和Code-Splitting-代码分割"><a href="#1-webpack和Code-Splitting-代码分割" class="headerlink" title="1. webpack和Code Splitting(代码分割)"></a>1. webpack和Code Splitting(代码分割)</h2><h3 id="两者的关系"><a href="#两者的关系" class="headerlink" title="两者的关系"></a>两者的关系</h3><ul><li>假设业务代码1Mb,工具库1Mb，在打包文件不做压缩的情况下，</li></ul><ol><li>首次访问页面打包出来的main.js会有2mb，这样就容易造成下面的问题:<a id="more"></a><ul><li>打包文件会很大，加载时间会长</li><li>我们修改了代码，重新访问我们的页面，又要加载2mb文件</li></ul></li><li>第二种：(Code Splitting)<ul><li>将main.js被拆分为loadsh.js(1mb), main.js(1mb)</li><li>当页面业务逻辑发生变化时，只要加载main.js即可(1mb)<h3 id="Code-Splitting"><a href="#Code-Splitting" class="headerlink" title="Code Splitting"></a>Code Splitting</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    optimization: &#123;</span><br><span class="line">        splitChunks: &#123;</span><br><span class="line">            chunks: <span class="string">&#x27;all&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li></ul></li></ol><ul><li>代码分割的思想和webpack无关，我们甚至可以自己去实现代码分割，但是webpack的出现，让代码分割变得更方便</li><li>webpack中实现代码分割，两种方式：<ol><li>同步代码：只需要在webpack.common.js中配置optimization</li><li>异步代码（import().then()): 异步代码，无需任何配置，会自动进行代码分割</li></ol></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;高级概念篇2&quot;&gt;&lt;a href=&quot;#高级概念篇2&quot; class=&quot;headerlink&quot; title=&quot;高级概念篇2&quot;&gt;&lt;/a&gt;高级概念篇2&lt;/h1&gt;&lt;h2 id=&quot;1-webpack和Code-Splitting-代码分割&quot;&gt;&lt;a href=&quot;#1-webpack和Code-Splitting-代码分割&quot; class=&quot;headerlink&quot; title=&quot;1. webpack和Code Splitting(代码分割)&quot;&gt;&lt;/a&gt;1. webpack和Code Splitting(代码分割)&lt;/h2&gt;&lt;h3 id=&quot;两者的关系&quot;&gt;&lt;a href=&quot;#两者的关系&quot; class=&quot;headerlink&quot; title=&quot;两者的关系&quot;&gt;&lt;/a&gt;两者的关系&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;假设业务代码1Mb,工具库1Mb，在打包文件不做压缩的情况下，&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;首次访问页面打包出来的main.js会有2mb，这样就容易造成下面的问题:</summary>
     
     
     
