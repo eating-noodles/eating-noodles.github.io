@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-12T11:17:17.992Z</updated>
+  <updated>2022-04-12T15:15:08.206Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ts1-concept</title>
+    <link href="http://example.com/2022/04/12/ts1-concept/"/>
+    <id>http://example.com/2022/04/12/ts1-concept/</id>
+    <published>2022-04-12T14:39:48.000Z</published>
+    <updated>2022-04-12T15:15:08.206Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ts"><a href="#ts" class="headerlink" title="ts"></a>ts</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ul><li>ts是js的超集，包含了js的所有特性，另外还有自己的独特语法。需要编译成js才能运行。<span id="more"></span><h2 id="静态类型-vs-动态类型"><a href="#静态类型-vs-动态类型" class="headerlink" title="静态类型 vs 动态类型"></a>静态类型 vs 动态类型</h2></li></ul><ol><li>动态类型<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 动态类型</span></span><br><span class="line"><span class="keyword">let</span> a = <span class="number">123</span>;</span><br><span class="line">a =  <span class="string">&#x27;123&#x27;</span>;</span><br></pre></td></tr></table></figure>js中的变量类型为动态类型，我们可以随时对其进行改变。如上例，变量a开始为number，我们可将其改变为string。</li><li>静态类型<br>ts中的变量类型为静态类型，一个变量在定义时已经定义好了其类型，后续不可将其赋值为其他类型的内容。</li></ol><h2 id="ts的优势"><a href="#ts的优势" class="headerlink" title="ts的优势"></a>ts的优势</h2><ol><li>开发过程中, 由于参数静态类型约束, 可以发现潜在问题</li><li>更友好的代码提示</li><li>代码语义更通俗易懂</li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;ts&quot;&gt;&lt;a href=&quot;#ts&quot; class=&quot;headerlink&quot; title=&quot;ts&quot;&gt;&lt;/a&gt;ts&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;ts是js的超集，包含了js的所有特性，另外还有自己的独特语法。需要编译成js才能运行。</summary>
+    
+    
+    
+    
+    <category term="ts" scheme="http://example.com/tags/ts/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack6-vue_cli3&amp;summary</title>
