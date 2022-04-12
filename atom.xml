@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-12T10:46:18.303Z</updated>
+  <updated>2022-04-12T11:05:45.704Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/04/12/webpack6-vue-cli3/"/>
     <id>http://example.com/2022/04/12/webpack6-vue-cli3/</id>
     <published>2022-04-12T09:58:18.000Z</published>
-    <updated>2022-04-12T10:46:18.303Z</updated>
+    <updated>2022-04-12T11:05:45.704Z</updated>
     
     <content type="html"><![CDATA[<h1 id="vue-cli-3"><a href="#vue-cli-3" class="headerlink" title="vue-cli 3"></a>vue-cli 3</h1><span id="more"></span><ul><li>vue-cli对webpack进行了封装，要按照vue-cli暴露的接口来进行配置<br>vue.config.js<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">    <span class="attr">outputDir</span>: <span class="string">&#x27;noodles&#x27;</span>,</span><br><span class="line">    <span class="comment">// note: 可以写原生的webpack配置</span></span><br><span class="line">    <span class="attr">configureWebpack</span>: &#123;</span><br><span class="line">        <span class="attr">devServer</span>: &#123;</span><br><span class="line">            <span class="attr">contentBase</span>: [path.<span class="title function_">resolve</span>(__dirname, <span class="string">&quot;static&quot;</span>)]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>要学会查文档</p><ul><li>记住webpack的基础知识点/脉络记住，loader是什么，entry是什么，module中的rule怎么配置，plugin是什么。其他的遇到再查阅官方文档.</li><li><code>GUIDES</code>: 查找解决某个问题的方向时，查看官方文档的Guides。比如忘了代码分割怎么做了，就看Guides的code splitting的内容.</li><li><code>CONCEPTS</code>: 是基础的核心概念.</li><li><code>CONFIGURATION</code>: 关于webpack的配置项不知道什么意思或者怎么配置的时候，可以看configuration.</li><li><code>API</code>: 里面有很多webpack、loader、plugin暴露的api.</li><li><code>LOADERS</code>: 查看loaders.</li><li><code>PLUGINS</code>: 查看plugins.</li></ul>]]></content>
     
