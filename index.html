@@ -1,1 +1,45 @@
-<div>我梁三十七天下第一！哈哈哈哈</div>
+<div class="red-dot" style="background:#000000;">
+  <span>
+    梁三十七天下第一！哈哈哈
+  </span>
+  </div>
+  
+  
+  <style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .red-dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    writing-mode: vertical-rl;
+    font-size: 10vw;
+    animation:fade 1500ms infinite;
+    -webkit-animation:fade 1500ms infinite;
+  padding: 20px;
+  border-radius: 20%;
+  }
+  
+  span {
+      background: linear-gradient(to bottom, rgb(255, 100, 100), rgb(100, 100, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        filter: brightness(1.5); /* 提高渐变色的亮度 */
+  }
+  @keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+  }
+  @-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+  }
+  
+  </style>
