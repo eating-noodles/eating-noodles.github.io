@@ -1,12 +1,40 @@
-<div class="red-dot" style="background:#000000;">
-  <span>
-    我梁三十七天下第一！哈哈哈
-  </span>
-  </div>
+<div class="content1">
+  <div class="red-dot" style="background:#000000;">
+    <span>
+      我！
+    </span>
+    </div>
+    
+    <div class="red-dot" style="background:#000000;">
+      <span>
+        梁三十七！
+      </span>
+    </div>
+    <div class="red-dot" style="background:#000000;">
+    <span>
+      天下第一！
+    </span>
+    </div>
+
+</div>
+
+
   
-  
+  <div class="red-dot1" style="background:#000000;">
+    <span>
+      哈哈哈哈哈
+    </span>
+    </div>
   <style>
   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .content1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,23 +42,51 @@
   
   .red-dot{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
     color: white;
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
     font-size: 10vw;
     animation:fade 1500ms infinite;
     -webkit-animation:fade 1500ms infinite;
-  padding: 20px;
-  border-radius: 3vw;
+    padding: 20px;
+    border-radius: 3vw;
+    margin-right: 4vw;
+  }
+
+  .red-dot span {
+    height: 52vw;
+    background: linear-gradient(to bottom, rgb(255, 100, 100), rgb(100, 100, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: brightness(1.5); /* 提高渐变色的亮度 */
+  }
+
+  .red-dot1{
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+    color: white;
+    font-size: 10vw;
+    animation:fade 1500ms infinite;
+    -webkit-animation:fade 1500ms infinite;
+    padding: 20px;
+    border-radius: 3vw;
+    margin-top: 4vw;
+    margin-right: 4vw;
+  }
+  .red-dot1 span {
+    text-align: center;
+    width: 59vw;
+    background: linear-gradient(to bottom, rgb(255, 100, 100), rgb(100, 100, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: brightness(1.5); /* 提高渐变色的亮度 */
   }
   
-  span {
-      background: linear-gradient(to bottom, rgb(255, 100, 100), rgb(100, 100, 255));
-        -webkit-background-clip: text;
-        color: transparent;
-        filter: brightness(1.5); /* 提高渐变色的亮度 */
-  }
+
   @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
